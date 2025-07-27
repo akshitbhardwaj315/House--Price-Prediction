@@ -236,7 +236,7 @@ pip install -r requirements.txt
 
 ### 3️⃣ **Run Prediction Model**
 ```bash
-python house_price_predictor.py
+streamlit run app.py
 ```
 
 ### 4️⃣ **View Results**
