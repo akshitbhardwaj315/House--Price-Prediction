@@ -571,10 +571,6 @@ This project is licensed under the **MIT License**
 💡 **Suggest improvements**
 
 <br/>
-
-[![Star History](https://img.shields.io/github/stars/yourusername/house-price-prediction?style=social)](https://github.com/yourusername/house-price-prediction/stargazers)
-[![Forks](https://img.shields.io/github/forks/yourusername/house-price-prediction?style=social)](https://github.com/yourusername/house-price-prediction/network/members)
-
 </div>
 
 <br/>
