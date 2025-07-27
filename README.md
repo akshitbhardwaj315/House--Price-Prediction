@@ -86,7 +86,7 @@
 
 ### 🎮 **Interactive Property Input Interface**
 
-<img src="https://github.com/yourusername/house-price-prediction/raw/main/screenshots/input_interface.png" width="800" alt="Property Input Interface" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);"/>
+<img src="https://github.com/akshitbhardwaj315/House--Price-Prediction/raw/main/images/input.png" width="800" alt="Input Interface" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);"/>
 
 *Intuitive sliders and dropdowns for easy property specification*
 
@@ -94,7 +94,8 @@
 
 ### 🎯 **Real-time Prediction Results**
 
-<img src="https://github.com/yourusername/house-price-prediction/raw/main/screenshots/prediction_results.png" width="800" alt="Prediction Results" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);"/>
+<img src="https://github.com/akshitbhardwaj315/House--Price-Prediction/raw/main/images/prediction.png" width="800" alt="Prediction Visualization" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);"/>
+
 
 *Instant predictions with accuracy metrics and comparable properties*
 
@@ -102,7 +103,8 @@
 
 ### 📊 **Detailed Analytics Dashboard**
 
-<img src="https://github.com/yourusername/house-price-prediction/raw/main/screenshots/analytics_dashboard.png" width="800" alt="Analytics Dashboard" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);"/>
+<img src="https://github.com/akshitbhardwaj315/House--Price-Prediction/raw/main/images/footer.png" width="800" alt="Footer Overview" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);"/>
+
 
 *Comprehensive property analysis with model performance insights*
 
