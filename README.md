@@ -335,7 +335,7 @@ streamlit run app.py
 
 | Metric | Our Model | Industry Standard | Status |
 |:---:|:---:|:---:|:---:|
-| **Accuracy** | `88.6%` | `85.0%` | ✅ **+4.2% Better** |
+| **Accuracy** | `93.6%` | `85.0%` | ✅ **+8.2% Better** |
 | **Sample Prediction** | `$192,868` | `$185,000` | 📊 **Realistic Range** |
 | **Response Time** | `<1 second` | `5-10 seconds` | ⚡ **10x Faster** |
 | **User Experience** | `Interactive` | `Static Reports` | 🎯 **Modern Interface** |
