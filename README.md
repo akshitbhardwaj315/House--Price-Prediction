@@ -32,7 +32,7 @@
 **Transform raw property data into accurate price predictions using cutting-edge machine learning**
 
 ### 🌟 **Try the Live Demo**
-**[👉 Launch AI House Price Calculator](https://house--price-prediction-2vmnzqekv26ifuqsw2qqjb.streamlit.app/)**
+**[👉 Launch AI House Price Calculator](https://house--price-prediction-yy7cmbvhq7gxkcdnnw94fj.streamlit.app/)**
 
 *Experience real-time property valuation powered by our trained XGBoost model*
 
