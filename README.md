@@ -10,7 +10,7 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Try_Now-FF6B35?style=for-the-badge&logoColor=white)](https://house--price-prediction-2vmnzqekv26ifuqsw2qqjb.streamlit.app/)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Try_Now-FF6B35?style=for-the-badge&logoColor=white)](https://house--price-prediction-yy7cmbvhq7gxkcdnnw94fj.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.8+-4B8BBE?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![XGBoost](https://img.shields.io/badge/XGBoost-FF6B35?style=for-the-badge&logo=xgboost&logoColor=white)](https://xgboost.ai)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
