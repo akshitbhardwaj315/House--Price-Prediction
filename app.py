@@ -101,7 +101,7 @@ def load_resources():
         return None, None, None
 
 def map_user_to_model(user_input):
-    """Convert user inputs to model features"""
+    """Convert user inputs to model features with feature engineering"""
     model_features = MODEL_DEFAULTS.copy()
     
     # Map user inputs
@@ -115,6 +115,7 @@ def map_user_to_model(user_input):
     garage = user_input.get('garage_spaces', 2)
     year = user_input.get('year_built', 2000)
     bedrooms = user_input.get('bedrooms', 3)
+    bathrooms = user_input.get('bathrooms', 2)
     
     model_features.update({
         'YearRemodAdd': year,
@@ -124,8 +125,41 @@ def map_user_to_model(user_input):
         '2ndFlrSF': area - (area // 2),
         'TotRmsAbvGrd': bedrooms + 3,
         'GarageYrBlt': year,
-        'GarageArea': garage * 280
+        'GarageArea': garage * 280,
+        'OpenPorchSF': 0,
+        'EnclosedPorch': 0,
+        '3SsnPorch': 0,
+        'ScreenPorch': 0,
+        'Fireplaces': 0,
+        'PoolArea': 0,
+        'YrSold': '2008'
     })
+    
+    # FEATURE ENGINEERING - Add the columns your model expects
+    # 1. Combined features
+    model_features['TotalSF'] = model_features['1stFlrSF'] + model_features['2ndFlrSF'] + model_features['TotalBsmtSF']
+    model_features['TotalBath'] = model_features['FullBath'] + model_features['HalfBath'] + model_features['BsmtFullBath'] + model_features['BsmtHalfBath']
+    model_features['TotalPorch'] = model_features['OpenPorchSF'] + model_features['EnclosedPorch'] + model_features['3SsnPorch'] + model_features['ScreenPorch']
+    
+    # 2. Age features
+    yr_sold = int(model_features['YrSold']) if isinstance(model_features['YrSold'], str) else model_features['YrSold']
+    model_features['HouseAge'] = yr_sold - model_features['YearBuilt']
+    model_features['RemodAge'] = yr_sold - model_features['YearRemodAdd']
+    
+    # 3. Boolean features (0/1)
+    model_features['HasGarage'] = 1 if model_features['GarageArea'] > 0 else 0
+    model_features['HasFireplace'] = 1 if model_features['Fireplaces'] > 0 else 0
+    model_features['HasPool'] = 1 if model_features['PoolArea'] > 0 else 0
+    model_features['HasBasement'] = 1 if model_features['TotalBsmtSF'] > 0 else 0
+    model_features['Has2ndFloor'] = 1 if model_features['2ndFlrSF'] > 0 else 0
+    
+    # 4. Ratio features
+    lot_area = user_input.get('lot_size', 10000)
+    model_features['LivAreaRatio'] = model_features['GrLivArea'] / lot_area
+    model_features['GarageRatio'] = model_features['GarageArea'] / model_features['TotalSF'] if model_features['TotalSF'] > 0 else 0
+    
+    # 5. Quality average
+    model_features['AvgQuality'] = (model_features['OverallQual'] + model_features['OverallCond']) / 2
     
     return model_features
 
