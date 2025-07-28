@@ -579,7 +579,7 @@ This project is licensed under the **MIT License**
 
 <div align="center">
 
-[![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=150&section=footer&text=🚀%20Try%20the%20Live%20Demo%20Now!&fontSize=24&fontColor=ffffff&animation=fadeIn&fontAlignY=70)](https://house--price-prediction-2vmnzqekv26ifuqsw2qqjb.streamlit.app/)
+[![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=150&section=footer&text=🚀%20Try%20the%20Live%20Demo%20Now!&fontSize=24&fontColor=ffffff&animation=fadeIn&fontAlignY=70)](https://house--price-prediction-yy7cmbvhq7gxkcdnnw94fj.streamlit.app/)
 
 
 <br/>
